@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="bathbody.js"></script>
+    <title>Minimal Beauty</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Minimal Beauty</h1>
+            <i id="hambtn" class='bx bx-menu noSelect'></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i id="search-icon" class='bx bx-search-alt-2'></i>
+                <input id="search-bar" type="text" placeholder="Search">
+            </li>
+            <li id="li1">
+                <a href="index.html" class="noSelect">
+                    <img src="https://img.icons8.com/color/48/000000/login-rounded-right.png"/>
+                    <span class="link_name">Login</span>
+                </a>
+            </li>
+            <li id="li2">
+                <a href="beauty.html" class="noSelect">
+                    <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-blush-brush-cosmetics-justicon-lineal-color-justicon.png"/>
+                    <span class="link_name">Beauty</span>              
+                </a>
+            </li>
+            <li id="li3">
+                <a href="bathbody.html" class="noSelect">
+                    <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-shampoo-hotel-essentials-justicon-lineal-color-justicon.png" />
+                    <span class="link_name">Bath & Body</span>
+                </a>
+            </li>
+            <li id="li4">
+                <a href="home.html" class="noSelect">
+                    <img src="https://img.icons8.com/dusk/64/000000/coffee-table.png"/>
+                    <span class="link_name">Home</span> 
+                </a>
+            </li>
+            <li id="li5">
+                <a href="#" class="noSelect">
+                    <img src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/000000/external-mail-mail-vitaliy-gorbachev-blue-vitaly-gorbachev-4.png"/>
+                    <span class="link_name">Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--End of Navigation bar -->
+
+    <!-- Contact Us Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <div class="modal-form">
+                <form action="#">
+                    <h1>Get in touch</h1>
+                    <div>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea name="message" id="message" cols="25" rows="4" placeholder="Message"></textarea>
+                        <!-- <input type="text" placeholder="Message"> -->
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End of Contact Us Modal -->
+
+
+    <div class="hero" style="background-color: #F3CFC6;">
+        <div class="hero-container">
+            <div class="hero-item">
+                <div class="item-image"></div>
+                <div class="item-desc"></div>
+            </div>
+            <div class="hero-item">
+                <div class="item-image"></div>
+                <div class="item-desc"></div>
+            </div>
+            <div class="hero-item">
+                <div class="item-image"></div>
+                <div class="item-desc"></div>
+            </div>
+            <div class="hero-item">
+                <div class="item-image"></div>
+                <div class="item-desc"></div>
+            </div>
+            <div class="hero-item">
+                <div class="item-image"></div>
+                <div class="item-desc"></div>
+            </div>
+            <div class="hero-item">
+                <div class="item-image"></div>
+                <div class="item-desc"></div>
+            </div>
+            <div class="hero-item">
+                <div class="item-image"></div>
+                <div class="item-desc"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+   <!-- Footer Section -->
+   <section class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-item">
+                <span>Main Menu</span>
+                <a href="#">Shop</a>
+                <a href="#">Our Story</a>
+            </div>
+            <div class="footer-item">
+                <span>Footer Menu</span>
+                <a href="#">FAQs</a>
+                <a href="#">Returns & Refund</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-item">
+                <span>Newsletter</span>
+                <div class="para">Discount codes, launch updates and nothing else. We don't spam, promise.</div>
+                <div class="footer-email">
+                    <div class="emailText">Email address</div>
+                    <form action="#">
+                        <input type="text" placeholder="Email address">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr id="footer-line">
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+            </div>
+            <div class="social-item">
+                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+            </div>
+            <div class="social-item">
+                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+            </div>
+            <div class="social-item">
+                <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+            </div>
+        </div>
+        <p id="copyright">Copyright © 2021 Pratima. All rights reserved.</p>
+    </div>
+   </section>
+   <!--End of Footer Section -->
+</body>
+</html>

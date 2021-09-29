@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+.hero{
+    background-color: #F2D2BD;
+    padding: 10px 0;
+}
+
+.hero-container{
+    /* border: 1px solid saddlebrown; */
+    height: auto;
+    /*will set image on top of text */
+    display: flex;/*row*/
+    align-items: center;
+    justify-content: center;
+   flex-wrap: wrap;
+   text-align: center;
+}
+
+.hero-item{
+    /* border:2px solid blue; */
+    margin:10px 6px;
+    overflow:hidden;
+}
+
+.item-image{
+    height:300px;
+    width:250px;
+    /* border:1px solid yellow;  */
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.item-image form input{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width:200px;
+    left:0;
+    margin-left:25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s ease opacity;
+    background-color: #967969;
+    color:#fff;
+    font-family: 'Roboto',serif;
+    border:none;
+    padding: 7px;
+}
+
+.sold-out{
+    color:#fff;
+    background-color: #000;
+    text-transform: uppercase;
+    margin-top:10px;
+    position: absolute;
+    right: 0;
+     margin-right: 10px;
+     padding: 6px;
+     font-size: 14px;
+     font-family: 'Source Code Pro',serif;
+     letter-spacing: 1px;
+}
+
+
+.item-desc{
+    /* border:1px solid hotpink; */
+    text-align: left;
+}
+
+.item-desc h1{
+    font-family: 'Roboto',serif;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+.item-desc span{
+   font-family: 'Raleway',serif;
+   font-size: 1.4rem;
+   font-weight: 600;
+   color:#505050;
+}
+
+@media screen and (max-width: 768px){
+    /* ipads,tablets */
+    .hero-item{
+        margin:6px;
+    }
+    .item-image{
+        height:180px;
+         width:170px;
+    }
+    .item-image form input{
+        width:120px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /* mobile */
+    .hero-item{
+        margin:3px;
+    }
+    .item-image{
+        height:100px;
+         width:90px;
+         margin-bottom: 5px;
+    }
+    .item-image form input{
+        width:70px;
+        margin-bottom: 6px;
+        font-size: 9px;
+        left:0;
+        margin-left:10px;
+        padding: 4px;
+    }  
+    .sold-out{
+        margin-right: 3px;
+        padding: 3px;
+        font-size: 9px;
+    }
+
+    .item-desc h1{
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }   
+    .item-desc span{
+       font-size: 0.8rem;
+       font-weight: 600;
+    }
+}
